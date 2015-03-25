@@ -1,6 +1,3 @@
-LOGBACK-GELF - A GELF Appender for Logback
-==========================================
-
 A [Logback](http://logback.qos.ch/) Appender that encodes logs using
 an [Encoder](http://logback.qos.ch/manual/encoders.html), and sends
 the result to a remote host over TCP.
@@ -31,7 +28,7 @@ If you're a maven user, the dependency information is below:
 <dependency>
     <groupId>me.moocar</groupId>
     <artifactId>socket-encoder-appender</artifactId>
-    <version>0.12</version>
+    <version>0.1</version>
 </dependency>
 ```
 
@@ -40,7 +37,7 @@ Usage
 
 See [logback-gelf TCP configuration]() For an example of how to
 configure this appender. Note, that a null delimeter (\0 character)
-will be added to the end of every sent log
+will be added to the end of every sent log.
 
 ### Configuration
 
