@@ -20,24 +20,15 @@ library.
 Depdency information
 -----------------------------------
 
-socket-encoder-appender is up on
-[Maven Central](http://search.maven.org/#artifactdetails%7Cme.moocar%7Clogback-gelf%7C0.12%7Cjar).
-If you're a maven user, the dependency information is below:
-
-```xml
-<dependency>
-    <groupId>me.moocar</groupId>
-    <artifactId>socket-encoder-appender</artifactId>
-    <version>0.1</version>
-</dependency>
-```
+socket-encoder-appender will eventually be up on maven central. While testing however, build it manually.
 
 Usage
 -----
 
-See [logback-gelf TCP configuration]() For an example of how to
-configure this appender. Note, that a null delimeter (\0 character)
-will be added to the end of every sent log.
+See
+[logback-gelf TCP configuration](https://github.com/Moocar/logback-gelf/tree/the-great-appender-rejig#tcp)
+For an example of how to configure this appender. Note, that a null
+delimeter (\0 character) will be added to the end of every sent log.
 
 ### Configuration
 
