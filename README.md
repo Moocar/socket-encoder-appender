@@ -34,7 +34,7 @@ delimeter (\0 character) will be added to the end of every sent log.
 
 * **remoteHost**: The remote server host name to send log messages to
   (DNS or IP). Default: `"localhost"`
-* **port**: The remote server port. Default: `12201`
+* **port**: The remote server port. Required
 * **queueSize**: The number of log to keep in memory while the remote
   server can't be reached. Default: `128`
 * **acceptConnectionTimeout**: Milliseconds to wait for a connection

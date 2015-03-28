@@ -35,8 +35,10 @@ public class SocketEncoderAppender<E> extends OutputStreamAppender<E> implements
      */
     public static final int DEFAULT_QUEUE_SIZE = 128;
 
+    private static final String DEFAULT_REMOTE_HOST = "localhost";
+
     private int port;
-    private String remoteHost;
+    private String remoteHost = DEFAULT_REMOTE_HOST;
     private InetAddress address;
 
     private int acceptConnectionTimeout = DEFAULT_ACCEPT_CONNECTION_DELAY;
