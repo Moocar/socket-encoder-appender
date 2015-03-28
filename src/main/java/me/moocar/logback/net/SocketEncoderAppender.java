@@ -110,7 +110,6 @@ public class SocketEncoderAppender<E> extends OutputStreamAppender<E> implements
      */
     @Override
     public void stop() {
-        addInfo("Stopping");
         if (!isStarted()) return;
         CloseUtil.closeQuietly(socket);
         task.cancel(true);
@@ -148,6 +147,8 @@ public class SocketEncoderAppender<E> extends OutputStreamAppender<E> implements
                     dispatchEvents();
                 } catch (IOException ex) {
                     addInfo(peerId + "connection failed: " + ex);
+                } catch (Exception e) {
+                    addError("Error in connect loop", e);
                 } finally {
                     CloseUtil.closeQuietly(socket);
                     socket = null;
@@ -163,11 +164,8 @@ public class SocketEncoderAppender<E> extends OutputStreamAppender<E> implements
 
     private void dispatchEvents() throws InterruptedException, IOException {
         while (true) {
-            addInfo("waiting to dispatch");
             E event = deque.takeFirst();
-            addInfo("got event" + event);
             super.subAppend(event);
-            addInfo("adding null character");
             this.getOutputStream().write('\0');
         }
     }
