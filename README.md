@@ -17,7 +17,7 @@ I needed to encode messages into GELF json before sending over TCP.
 Much to my annoyance, SocketAppender wouldn't allow that. Thus, this
 library.
 
-Depdency information
+Dependency information
 -----------------------------------
 
 socket-encoder-appender will eventually be up on maven central. While testing however, build it manually.
