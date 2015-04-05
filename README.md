@@ -20,7 +20,15 @@ library.
 Dependency information
 -----------------------------------
 
-socket-encoder-appender will eventually be up on maven central. While testing however, build it manually.
+Latest version:
+
+```xml
+<dependency>
+  <groupId>me.moocar</groupId>
+  <artifactId>socket-encoder-appender</artifactId>
+  <version>0.1beta1</version>
+</dependency>
+```
 
 Usage
 -----
