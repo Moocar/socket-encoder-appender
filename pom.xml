@@ -5,7 +5,7 @@
   <groupId>me.moocar</groupId>
   <artifactId>socket-encoder-appender</artifactId>
   <packaging>jar</packaging>
-  <version>0.1beta1-SNAPSHOT</version>
+  <version>0.1beta1</version>
   <name>socket-encoder-appender</name>
 
   <parent>
