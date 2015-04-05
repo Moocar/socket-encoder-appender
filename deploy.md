@@ -6,9 +6,9 @@ guide](http://central.sonatype.org/pages/ossrh-guide.html) has more.
 
 ## Before you start
 
-Ensure GPG is installed and that your key details are in `~/.gnugpg`
+- Ensure GPG is installed and that your key details are in `~/.gnugpg`
 
-You'll also need to make sure that you have configured your github login information in your `~/.m2/settings.xml`. Something like:
+- You'll also need to make sure that you have configured your github login information in your `~/.m2/settings.xml`. Something like:
 
 ```xml
       <profile>
@@ -32,7 +32,7 @@ You'll also need to make sure that you have configured your github login informa
 
 ## Step 2 - Publish snapshot to to sonatype maven repo
 
-`mvn clean deploy` (enter GPG passphrase)
+`mvn clean deploy` (enter GPG passphrase if required)
 
 ## Step 3 - Publish candidate to staging repo
 
